@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Hash": "rC3pASPV+QInSZLvXvoHF7awbN0fXCOCdV0cHQwt5QM=",
+  "Source": "deploy.API",
+  "BasePath": "_content/deploy.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "deploy.API/wwwroot",
+      "Source": "deploy.API",
+      "ContentRoot": "/Users/oliviafowler/RiderProjects/455fun/backend/deploy.API/wwwroot/",
+      "BasePath": "_content/deploy.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/oliviafowler/RiderProjects/455fun/backend/deploy.API/wwwroot/Data/dataframe.sav",
+      "SourceId": "deploy.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/oliviafowler/RiderProjects/455fun/backend/deploy.API/wwwroot/",
+      "BasePath": "_content/deploy.API",
+      "RelativePath": "Data/dataframe.sav",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Data/dataframe.sav"
+    },
+    {
+      "Identity": "/Users/oliviafowler/RiderProjects/455fun/backend/deploy.API/wwwroot/Data/lastAssignment.sav",
+      "SourceId": "deploy.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/oliviafowler/RiderProjects/455fun/backend/deploy.API/wwwroot/",
+      "BasePath": "_content/deploy.API",
+      "RelativePath": "Data/lastAssignment.sav",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Data/lastAssignment.sav"
+    },
+    {
+      "Identity": "/Users/oliviafowler/RiderProjects/455fun/backend/deploy.API/wwwroot/Scripts/convert_sav_to_json.py",
+      "SourceId": "deploy.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/oliviafowler/RiderProjects/455fun/backend/deploy.API/wwwroot/",
+      "BasePath": "_content/deploy.API",
+      "RelativePath": "Scripts/convert_sav_to_json.py",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Scripts/convert_sav_to_json.py"
+    }
+  ]
+}

@@ -1,25 +1,33 @@
+using deploy.API.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// ✅ Register services BEFORE app.Build()
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader();
+    });
+});
 
+// ✅ Register other services
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<SavToJsonService>();
 
-var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+var app = builder.Build(); // 🚨 No more service modifications after this!
 
-app.UseHttpsRedirection();
+// ✅ Apply CORS before mapping controllers
+app.UseCors("AllowAll");
 
+app.UseStaticFiles();
+app.UseRouting();
 app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();

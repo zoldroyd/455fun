@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/oliviafowler/RiderProjects/455fun/backend/deploy.API/wwwroot/Data/dataframe.sav",
+      "PackagePath": "staticwebassets/Data/dataframe.sav"
+    },
+    {
+      "Id": "/Users/oliviafowler/RiderProjects/455fun/backend/deploy.API/wwwroot/Data/lastAssignment.sav",
+      "PackagePath": "staticwebassets/Data/lastAssignment.sav"
+    },
+    {
+      "Id": "/Users/oliviafowler/RiderProjects/455fun/backend/deploy.API/wwwroot/Scripts/convert_sav_to_json.py",
+      "PackagePath": "staticwebassets/Scripts/convert_sav_to_json.py"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.deploy.API.props",
+      "PackagePath": "build\\deploy.API.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.deploy.API.props",
+      "PackagePath": "buildMultiTargeting\\deploy.API.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.deploy.API.props",
+      "PackagePath": "buildTransitive\\deploy.API.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.deploy.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
