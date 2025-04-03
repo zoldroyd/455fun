@@ -1,11 +1,10 @@
 import "./App.css";
-import Master from "./Master";
+import Master from "./components/Master";
 
 function App() {
   return (
     <>
       <Master />
-      
     </>
   );
 }

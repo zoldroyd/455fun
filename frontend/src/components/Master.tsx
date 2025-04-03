@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import CsvTable from "./CsvTable";
+import MatrixTable from "./MatrixTable";
 
 function Master() {
   const [selectedId, setSelectedId] = useState("");
@@ -17,7 +18,7 @@ function Master() {
       .then((text) => {
         const lines = text.split("\n");
         const headers = lines[0].split(",");
-        const id = headers.findIndex(h => h.trim() === "id");
+        const id = headers.findIndex((h) => h.trim() === "id");
         const ids = new Set<string>();
         for (let i = 1; i < lines.length; i++) {
           const cols = lines[i].split(",");
@@ -57,12 +58,18 @@ function Master() {
             <div className="col">
               <h3>Collaborative Filtering</h3>
               <p>List of recs for {selectedId}</p>
-              <CsvTable selectedId={selectedId} csvPath="/collaborative_recommendations.csv"/>
+              <CsvTable
+                selectedId={selectedId}
+                csvPath="/collaborative_recommendations.csv"
+              />
             </div>
             <div className="col">
               <h3>Content Filtering</h3>
               <p>List of recs for {selectedId}</p>
-              <CsvTable selectedId={selectedId} csvPath="/content_recommendations.csv"/>
+              <MatrixTable
+                selectedId={selectedId}
+                csvPath="/contentFiltering.csv"
+              />
             </div>
             <div className="col">
               <h3>Azure</h3>
