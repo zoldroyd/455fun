@@ -447,19 +447,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/Zac/.nuget/packages/": {}
+    "/Users/oliviafowler/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Zac/Documents/IS 455/deploy/backend/deploy.API/deploy.API.csproj",
+      "projectUniqueName": "/Users/oliviafowler/RiderProjects/455fun/backend/deploy.API/deploy.API.csproj",
       "projectName": "deploy.API",
-      "projectPath": "/Users/Zac/Documents/IS 455/deploy/backend/deploy.API/deploy.API.csproj",
-      "packagesPath": "/Users/Zac/.nuget/packages/",
-      "outputPath": "/Users/Zac/Documents/IS 455/deploy/backend/deploy.API/obj/",
+      "projectPath": "/Users/oliviafowler/RiderProjects/455fun/backend/deploy.API/deploy.API.csproj",
+      "packagesPath": "/Users/oliviafowler/.nuget/packages/",
+      "outputPath": "/Users/oliviafowler/RiderProjects/455fun/backend/deploy.API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/Zac/.nuget/NuGet/NuGet.Config"
+        "/Users/oliviafowler/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -512,7 +512,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
