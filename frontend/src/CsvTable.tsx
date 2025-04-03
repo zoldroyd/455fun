@@ -7,13 +7,14 @@ type RowData = {
 
 interface CsvTableProps {
   selectedId: string;
+  csvPath: string;
 }
 
-const CsvTable: React.FC<CsvTableProps> = ({ selectedId }) => {
+const CsvTable: React.FC<CsvTableProps> = ({ selectedId, csvPath }) => {
   const [data, setData] = useState<RowData[]>([]);
 
   useEffect(() => {
-    fetch("/collaborative_recommendations.csv")
+    fetch(csvPath)
       .then((response) => response.text())
       .then((csvText) => {
         Papa.parse<RowData>(csvText, {
@@ -24,7 +25,7 @@ const CsvTable: React.FC<CsvTableProps> = ({ selectedId }) => {
           },
         });
       });
-  }, []);
+  }, [csvPath]);
 
   if (data.length === 0) return <div>Loading CSV...</div>;
 
