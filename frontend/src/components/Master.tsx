@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import CsvTable from "./CsvTable";
 import MatrixTable from "./MatrixTable";
+import AzureTable from "./AzureTable";
 
 function Master() {
   const [selectedId, setSelectedId] = useState("");
@@ -74,6 +75,7 @@ function Master() {
             <div className="col">
               <h3>Azure</h3>
               <p>List of recs for {selectedId}</p>
+              <AzureTable selectedId={selectedId} />
             </div>
           </div>
         </div>
